@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kodchasan', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* เปลี่ยนเป็น min-height เพื่อให้ body ยืดตามเนื้อหา */
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 95%; /* ปรับ max-width ให้มากขึ้น */
+    width: 800px; /* ปรับ width ให้มากขึ้น */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.button-container {
+    display: grid; /* เปลี่ยนเป็น grid เพื่อให้ปุ่มกระจายอยู่ในหน้าเดียว */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* ปรับ grid-template-columns */
+    gap: 10px; /* กำหนดระยะห่างระหว่างปุ่ม */
+}
+
+button {
+    font-family: 'Kodchasan', sans-serif;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
