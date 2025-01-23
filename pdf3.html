@@ -17,7 +17,7 @@
             <button id="4">เอกสารเพิ่มเติมต้นทุนช่วงการผลิต(หน่วยเสีย)</button>
             <button id="5">ห้างหุ้นส่วน(หลักการแบ่งกำไรในห้างหุ้นส่วน)</button>
             <button id="6">ห้างหุ้นส่วน(ประเด็นโบนัส)</button>
-            <button id="7">แนะนำการทำข้อสอบวิชาการบัญชี</button>
+            <button id="7" style="display: none;">แนะนำการทำข้อสอบวิชาการบัญชี</button>
             <button id="8">โจทย์พิเศษบัญชี 11 ม.ค 60</button>
             <button id="9">ข้อสอบเก่าครั้งที่ 45 (ราคาทุนสินค้าคงเหลือ)</button>
             <button id="10">ข้อสอบเก่าครั้งที่ 48</button>
@@ -34,107 +34,55 @@
             <button id="21">ติวครั้งที่ 59 ข้อสอบครั้งที่ 58 โปรแกรมสิทธิพิเศษแก่ลูกค้า</button>
             <button id="22">ติวครั้งที่ 59 โจทย์พิเศษประมาณการหนี้สิน</button>
             <button id="23">ติวครั้งที่ 59 เนื้อปันส่วนต้นทุนบริการให้แผนกผลิต</button>
-            <button id="24">ติวครั้งที่ 59 เนื้อปันส่วนต้นทุนบริการให้แผนกผลิต</button>
+            <button id="24">ติวครั้งที่ 59 มาตรฐาน18 โปรแกรมสิทธิพิเศษแก่ลูกค้า</button>
+            <button id="25">ติวครั้งที่ 60 (ข้อสอบครั้งที่ 59)</button>
+            <button id="26">ติวครั้งที่ 60 เฉลยข้อสอบครั้งที่ 59</button>
+            <button id="27">ติวครั้งที่ 60 มาตรฐานลูกหนี้(ปรับใหม่ปี 66)</button>
+            <button id="28">ติวครั้งที่ 60 มาตรฐานเกษตรกรรม(ปรับใหม่ปี 66)</button>
+            <button id="29">ติวครั้งที่ 60 สัญญาก่อสร้างและขายอสังหาริมทรัพย์</button>
+            <button id="30">ติวครั้งที่ 61</button>
         </div>
     </div>
 
     <script>
-        var pdf1Url = 'https://drive.google.com/file/d/1TneuTwc5RZBYZa1rXvjG8EC_7G431ouR/view';
-        document.getElementById('1').addEventListener('click', function() {
-            window.location.href = pdf1Url;
-        });
-        var pdf2Url = 'https://docs.google.com/document/d/10AxXQvjAc8Hv5QhT30wNtGEaA47JwonK/edit';
-        document.getElementById('2').addEventListener('click', function() {
-            window.location.href = pdf2Url;
-        });
-        var pdf3Url = 'https://drive.google.com/file/d/1x_lzYwx-AN4hc9q6XypMgCNDlFpqthZy/view';
-        document.getElementById('3').addEventListener('click', function() {
-            window.location.href = pdf3Url;
-        });
-        var pdf4Url = 'https://drive.google.com/file/d/1Z_hJ93D0UbdyiyoqE5LHo3kCFBSo7XSj/view';
-        document.getElementById('4').addEventListener('click', function() {
-            window.location.href = pdf4Url;
-        });
-        var pdf5Url = 'https://drive.google.com/file/d/1714P_b4f_t7_Y8TS1C20Pvg3KCzZcBbj/view';
-        document.getElementById('5').addEventListener('click', function() {
-            window.location.href = pdf5Url;
-        });
-        var pdf6Url = 'https://docs.google.com/document/d/1ESW17ghgDZDHCMZG9BcrePZQ94j9G1xU/edit';
-        document.getElementById('6').addEventListener('click', function() {
-            window.location.href = pdf6Url;
-        });
-        var pdf7Url = 'https://drive.google.com/file/d/170OvyBntHQ4lVgakz4Fg0b3S2JHm8PfO/view';
-        document.getElementById('7').addEventListener('click', function() {
-            window.location.href = pdf7Url;
-        });
-        var pdf8Url = 'https://docs.google.com/document/d/1PYf4WdnkaRih48J3K_7X5a_UUP8ElN1Q/edit';
-        document.getElementById('8').addEventListener('click', function() {
-            window.location.href = pdf8Url;
-        });
-        var pdf9Url = 'https://drive.google.com/file/d/1drXEXuOtolQj98qM91wnJDYW90wXsIhu/view';
-        document.getElementById('9').addEventListener('click', function() {
-            window.location.href = pdf9Url;
-        });
-        var pdf10Url = 'https://drive.google.com/file/d/1p4cBPwvYW9CvmgdSo1fLseyE8yW43X1E/view';
-        document.getElementById('10').addEventListener('click', function() {
-            window.location.href = pdf10Url;
-        });
-        var pdf11Url = 'https://drive.google.com/file/d/19zAmp8d_WiaCPhPkVeADLGrjwDrGcI_O/view';
-        document.getElementById('11').addEventListener('click', function() {
-            window.location.href = pdf11Url;
-        });
-        var pdf12Url = 'https://drive.google.com/file/d/1LmvVcqBcPAlJg-_lMN0hd_pR4olNfr-v/view';
-        document.getElementById('12').addEventListener('click', function() {
-            window.location.href = pdf12Url;
-        });
-        var pdf13Url = 'https://drive.google.com/file/d/1otWpzW7INruLaqSMAz2fTvc-5DRAu4vW/view';
-        document.getElementById('13').addEventListener('click', function() {
-            window.location.href = pdf13Url;
-        });
-        var pdf14Url = 'https://drive.google.com/file/d/1FLxm-9zW3PH36d2vFDrFuo58TiYtfyFV/view';
-        document.getElementById('14').addEventListener('click', function() {
-            window.location.href = pdf14Url;
-        });
-        var pdf15Url = 'https://drive.google.com/file/d/1v6QMpmfK3O7-WtOlhFbJEfJQDfLfDc3K/view';
-        document.getElementById('15').addEventListener('click', function() {
-            window.location.href = pdf15Url;
-        });
-        var pdf16Url = 'https://drive.google.com/file/d/11P4OM1wBgTBLSJ2AibpG-JGKKWlKnMx9/view';
-        document.getElementById('16').addEventListener('click', function() {
-            window.location.href = pdf16Url;
-        });
-        var pdf17Url = 'https://drive.google.com/file/d/1YTfF5_kNrhKchuetisxmakSaKFfuMf45/view';
-        document.getElementById('17').addEventListener('click', function() {
-            window.location.href = pdf17Url;
-        });
-        var pdf18Url = 'https://drive.google.com/file/d/1D8RrzhfEh0uzFyAj1zNSBdkbFy1OClsF/view';
-        document.getElementById('18').addEventListener('click', function() {
-            window.location.href = pdf18Url;
-        });
-        var pdf19Url = 'https://drive.google.com/file/d/11VcsK9haQ4CeTDbMdqM1hItYnRvDWxp8/view';
-        document.getElementById('19').addEventListener('click', function() {
-            window.location.href = pdf19Url;
-        });
-        var pdf20Url = 'https://drive.google.com/file/d/145NCxNPuTt3ns3xnhqGie1SRHTujx-9g/view';
-        document.getElementById('20').addEventListener('click', function() {
-            window.location.href = pdf20Url;
-        });
-        var pdf21Url = 'https://drive.google.com/file/d/1avddRhFlUo-PxMJwUuArZLkCXUoHYvzp/view';
-        document.getElementById('21').addEventListener('click', function() {
-            window.location.href = pdf21Url;
-        });
-        var pdf22Url = 'https://drive.google.com/file/d/1qOF9uPUEAWghGDHVtkqWrnQMP3EzQBMJ/view';
-        document.getElementById('22').addEventListener('click', function() {
-            window.location.href = pdf22Url;
-        });
-        var pdf23Url = 'https://drive.google.com/file/d/11P4OM1wBgTBLSJ2AibpG-JGKKWlKnMx9/view';
-        document.getElementById('23').addEventListener('click', function() {
-            window.location.href = pdf23Url;
-        });
-        var pdf24Url = 'https://drive.google.com/file/d/1NbM-eSGqrRr7P8cICIDTQBNvV3NkdvBp/view';
-        document.getElementById('24').addEventListener('click', function() {
-            window.location.href = pdf24Url;
-        });
-    </script>
+        const videoUrls = [
+        "https://drive.google.com/file/d/1TneuTwc5RZBYZa1rXvjG8EC_7G431ouR/view",
+        "https://docs.google.com/document/d/10AxXQvjAc8Hv5QhT30wNtGEaA47JwonK/edit",
+        "https://drive.google.com/file/d/1x_lzYwx-AN4hc9q6XypMgCNDlFpqthZy/view",
+        "https://drive.google.com/file/d/1Z_hJ93D0UbdyiyoqE5LHo3kCFBSo7XSj/view",
+        "https://drive.google.com/file/d/1714P_b4f_t7_Y8TS1C20Pvg3KCzZcBbj/view",
+        "https://docs.google.com/document/d/1ESW17ghgDZDHCMZG9BcrePZQ94j9G1xU/edit",
+        "https://drive.google.com/file/d/170OvyBntHQ4lVgakz4Fg0b3S2JHm8PfO/view",
+        "https://docs.google.com/document/d/1PYf4WdnkaRih48J3K_7X5a_UUP8ElN1Q/edit",
+        "https://drive.google.com/file/d/1drXEXuOtolQj98qM91wnJDYW90wXsIhu/view",
+        "https://drive.google.com/file/d/1p4cBPwvYW9CvmgdSo1fLseyE8yW43X1E/view",
+        "https://drive.google.com/file/d/19zAmp8d_WiaCPhPkVeADLGrjwDrGcI_O/view",
+        "https://drive.google.com/file/d/1LmvVcqBcPAlJg-_lMN0hd_pR4olNfr-v/view",
+        "https://drive.google.com/file/d/1otWpzW7INruLaqSMAz2fTvc-5DRAu4vW/view",
+        "https://drive.google.com/file/d/1FLxm-9zW3PH36d2vFDrFuo58TiYtfyFV/view",
+        "https://drive.google.com/file/d/1v6QMpmfK3O7-WtOlhFbJEfJQDfLfDc3K/view",
+        "https://drive.google.com/file/d/11P4OM1wBgTBLSJ2AibpG-JGKKWlKnMx9/view",
+        "https://drive.google.com/file/d/1YTfF5_kNrhKchuetisxmakSaKFfuMf45/view",
+        "https://drive.google.com/file/d/1D8RrzhfEh0uzFyAj1zNSBdkbFy1OClsF/view",
+        "https://drive.google.com/file/d/11VcsK9haQ4CeTDbMdqM1hItYnRvDWxp8/view",
+        "https://drive.google.com/file/d/145NCxNPuTt3ns3xnhqGie1SRHTujx-9g/view",
+        "https://drive.google.com/file/d/1avddRhFlUo-PxMJwUuArZLkCXUoHYvzp/view",
+        "https://drive.google.com/file/d/1qOF9uPUEAWghGDHVtkqWrnQMP3EzQBMJ/view",
+        "https://drive.google.com/file/d/11P4OM1wBgTBLSJ2AibpG-JGKKWlKnMx9/view",
+        "https://drive.google.com/file/d/1NbM-eSGqrRr7P8cICIDTQBNvV3NkdvBp/view",
+        "https://drive.google.com/file/d/1fJgrYako01dHUws7rJvsn8OmKZ3a2yAu/view",
+        "https://drive.google.com/file/d/12EpOylzYRf58WDCH-4pd8N9ovlPGC4Jy/view",
+        "https://drive.google.com/file/d/1VSASj-2rV3_gaK_N3KYKLi901N9gDsja/view",
+        "https://drive.google.com/file/d/1dmP9sJf012s26vz0NJ4nG3QcM0GSboxl/view",
+        "https://drive.google.com/file/d/1nb-IRuZsXjedRfs5UDqeanc8WpsE6DJF/view",
+        "https://drive.google.com/file/d/1jP2SS2jSHquH4-1hKBwGtdAHONUcR9hv/view",
+        ];
+
+        for (let i = 1; i <= videoUrls.length; i++) {
+            document.getElementById(i.toString()).addEventListener('click', function() {
+                window.location.href = videoUrls[i - 1];
+            });
+        }
+    </script> 
 </body>
 </html>
